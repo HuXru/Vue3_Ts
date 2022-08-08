@@ -6,7 +6,7 @@
                     <img :src="column.avater" :alt="column.title" />
                     <h5>{{column.title}}</h5>
                     <p>{{column.description}}</p>
-                    <a href="#">进入专栏</a>
+                    <router-link :to="{name: 'column', params: {id:column.id}}">进入专栏</router-link>
                </div>
             </div>
         </div>
